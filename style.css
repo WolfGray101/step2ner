@@ -18,7 +18,7 @@ nav {
   letter-spacing: 1.2px;
 }
 .navbar-content {
-  height: 50px;
+  height: 80px;
   background: none repeat scroll 0 0 #000;
 
   display: flex;
@@ -35,6 +35,7 @@ nav {
   height: 50px;
   content: "Step2Nereality";
   z-index: 100;
+  font-size: 1.5rem;
 }
 
 .navbar ul > li {
@@ -47,10 +48,7 @@ nav {
   width: 20%;
   justify-content: center;
 }
-.logo {
-}
-main {
-}
+
 .section-info {
   padding-top: 60px;
 }
