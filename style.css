@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  line-height: 18px;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+@font-face {
+  font-family: Audiowide; /* Имя шрифта */
+  src: url(fonts/Audiowide-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+nav {
+  position: fixed;
+  top: 0px;
+  color: aliceblue;
+  width: 100%;
+  letter-spacing: 1.2px;
+}
+.navbar-content {
+  height: 50px;
+  background: none repeat scroll 0 0 #000;
+
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.navbar::after {
+  position: relative;
+  background: transparent url(img/menu_after_bg.png) no-repeat bottom center;
+  text-align: center;
+  display: block;
+  height: 50px;
+  content: "";
+  z-index: 100;
+}
+.navbar ul {
+  display: flex;
+  text-decoration: none;
+  gap: 10px;
+}
+.navbar ul > li {
+  list-style: none;
+}
+.list {
+}
+.logo {
+}
+main {
+}
+.section-info {
+  padding-top: 60px;
+}
+.section-info figure {
+  width: 50%;
+}
+.info-block {
+  display: flex;
+}
+.dark {
+  background-color: #000;
+  color: aliceblue;
+}
+.feedback-block {
+  border-radius: 40px;
+  border: none;
+  padding: 1rem;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-left: 2rem;
+}
+.feedback-btn {
+  color: aliceblue;
+  letter-spacing: 1px;
+  width: 30%;
+  background-color: red;
+}
+.info-text {
+  padding: 2rem;
+  width: 50%;
+  line-height: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info-text ul li {
+  padding: 0.5rem;
+}
+.info-img {
+  width: 100%;
+}
+.abtain {
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  height: 1rem;
+}
+.info-abtain {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.info-abtain .feedback-btn {
+  align-self: center;
+  margin: 1.5rem;
+  padding: 1.5rem;
+}
+.abtain-content {
+  text-align: center;
+  margin: -4px;
+  font-weight: 800;
+}
+.abtain-text {
+  margin: 0.5rem;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+}
+.li-none {
+  list-style: none;
+}
+
+h2 {
+  font-family: Audiowide;
+  margin: 1rem 0;
+  line-height: 25px;
+}
+.info-video {
+  width: 50%;
+  padding: 1rem;
+  position: relative;
+  margin: 0 0 15px 0;
+  /* aspect-ratio: 16/9; */
+  padding: 0 0 28% 0;
+}
+.info-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.info-about {
+}
+.info-konfig {
+}
+.section-complect {
+}
+.section-about {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.section-about__line-top {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.span-line {
+  height: 1px;
+  width: 150px;
+  background-color: bisque;
+}
+.section-about__header {
+  font-size: 32px;
+  font-weight: 600;
+}
+.info {
+  display: flex;
+}
+.section-video {
+}
+.section-games {
+}
+.games-list {
+}
+.section-step2step {
+  margin-top: 2rem;
+  padding: 5rem;
+  z-index: 5;
+  color: aliceblue;
+  background-color: rgba(205, 27, 36, 1);
+}
+
+.section-step2step::before {
+  margin-top: -90px;
+  background: transparent url(img/after_bg_white.png) no-repeat bottom center;
+  text-align: center;
+  display: block;
+  height: 50px;
+  content: "";
+  z-index: 10;
+}
+footer:before {
+  margin-top: -1px;
+  background: transparent url(img/after_bg_red.png) no-repeat bottom center;
+  text-align: center;
+  display: block;
+  height: 50px;
+  content: "";
+  z-index: 10;
+}
+
+.step {
+  margin-top: 2rem;
+}
+.step-text {
+  width: 23%;
+  align-self: stretch;
+  padding: 1rem;
+}
+.text-white {
+  background: #fff;
+  color: #000;
+  padding: 1rem;
+}
+.text-red {
+  border: 2px solid #fff;
+  padding: 1rem;
+}
+.step-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+
+}
+.contact {
+  font-family: Audiowide;
+  color: rgb(113, 113, 113);
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  align-items: center;
+}
+.phone {
+  font-size: 25px;
+
+}
+.email,
+.msg {
+  font-size: 20px;
+
+}
