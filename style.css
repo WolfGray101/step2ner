@@ -27,23 +27,25 @@ nav {
   align-items: center;
 }
 .navbar::after {
+  font-family: Audiowide;
   position: relative;
   background: transparent url(img/menu_after_bg.png) no-repeat bottom center;
   text-align: center;
   display: block;
   height: 50px;
-  content: "";
+  content: "Step2Nereality";
   z-index: 100;
 }
-.navbar ul {
-  display: flex;
-  text-decoration: none;
-  gap: 10px;
-}
+
 .navbar ul > li {
   list-style: none;
 }
 .list {
+  display: flex;
+  text-decoration: none;
+  gap: 1rem;
+  width: 20%;
+  justify-content: center;
 }
 .logo {
 }
