@@ -13,6 +13,10 @@
   font-family: Audiowide; /* Имя шрифта */
   src: url(fonts/Audiowide-Regular.ttf); /* Путь к файлу со шрифтом */
 }
+
+html {
+  scroll-behavior: smooth;
+  }
 nav {
   position: relative;
   z-index: 100;
@@ -20,6 +24,10 @@ nav {
 a {
   text-decoration: none;
   color: inherit;
+  transition: 0.2s;
+}
+ a:hover {
+  font-size: 1.2rem;
 }
 .msg {
   display: flex;
@@ -29,6 +37,9 @@ a {
 }
 .msg a{
   color: rgb(118, 116, 116);
+}
+.phone a:hover {
+  font-size: 1.8rem;
 }
 .navbar-content {
   height: 80px;
