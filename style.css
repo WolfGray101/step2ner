@@ -212,12 +212,15 @@ h2 {
 }
 .span-line {
   height: 1px;
-  width: 150px;
-  background-color: bisque;
+  width: 100px;
+  background-color: rgb(214, 198, 179);
 }
 .section-about__header {
-  font-size: 32px;
+  font-size: 25px;
   font-weight: 600;
+  line-height: 32px;
+  align-self: stretch;
+  width: 100%;
 }
 .info {
   display: flex;
@@ -241,7 +244,7 @@ h2 {
   z-index: 10;
 }
 footer:before {
-  margin-top: -1px;
+  margin-top: -2px;
   background: transparent url(img/after_bg_red.png) no-repeat bottom center;
   text-align: center;
   display: block;
@@ -358,8 +361,12 @@ footer:before {
     align-self: center;
     margin: 0;
   }
+  .section-step2step {
+/* margin-top: 94px; */
+padding: 100px 0 16px 0;
+  }
   .section-step2step::before{
-    margin-top: -100px;
+    margin-top: -125px;
   }
   .step-list {
     flex-wrap: wrap;
@@ -388,9 +395,7 @@ height: auto;
   .feedback-btn {
     width: 80%;
   }
-  .section-step2step::before{
-    margin-top: -115px;
-  }
+
   .info-block {
     margin-top: 3rem;
   }
