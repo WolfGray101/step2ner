@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   letter-spacing: 1px;
-  }
+}
 @import url(https://use.fontawesome.com/releases/v5.1.0/css/all.css);
 @import url(https://fonts.googleapis.com/css?family=Lobster|Roboto|Roboto+Condensed);
 @import url(https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css);
@@ -16,12 +16,11 @@
 
 body {
   color: #333;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 html {
   scroll-behavior: smooth;
-  }
+}
 nav {
   position: relative;
   z-index: 100;
@@ -31,7 +30,7 @@ a {
   color: inherit;
   transition: 0.2s;
 }
- a:hover {
+a:hover {
   font-size: 1.2rem;
 }
 .msg {
@@ -40,7 +39,7 @@ a {
   padding: 1rem;
   color: #333;
 }
-.msg a{
+.msg a {
   color: rgb(118, 116, 116);
 }
 .phone a:hover {
@@ -142,7 +141,7 @@ figure {
   margin-top: 2rem;
 }
 .info-text p {
-margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 .abtain {
   border-bottom: 2px solid black;
@@ -312,7 +311,7 @@ footer:before {
   height: 40px;
   z-index: 1000;
   border-radius: 50%;
-  display: flex;  
+  display: flex;
   flex-direction: column;
   gap: 5px;
   background-color: #fff;
@@ -330,9 +329,58 @@ footer:before {
 .price p {
   font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: .5rem;
-} 
+  margin-bottom: 0.5rem;
+}
 
+.modal-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  background-color: #333;
+  opacity: 0.97;
+  color: #fff;
+  padding: 1.2rem;
+  list-style: none;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+}
+
+.modal-margin {
+  margin-top: 4rem
+}
+
+.hide {
+  position: absolute;
+  opacity: 0;
+  top: -50px;
+  right: 0;
+  width: 0%;
+  height: 0vh;
+  transition: .5s linear;
+  z-index: 499;
+}
+.show {
+  width: 100%;
+  min-height: 200vh;
+  position: absolute;
+  transition: 0.15s linear;
+  z-index: 500;
+}
+.rotate-burger {   
+  rotate: 90deg;
+  z-index: 1000;
+  transition: 0.3s linear;
+}
+.d-fix {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .info-block,
   .info {
@@ -342,42 +390,42 @@ footer:before {
   figure {
     width: 100%;
   }
- ul {
-  padding: 1rem;
- }
+  ul {
+    padding: 1rem;
+  }
   .info-text {
     order: 1;
     padding: 1rem;
   }
-  .info-text h2{
-   text-align: center;
+  .info-text h2 {
+    text-align: center;
   }
-  .info-text ul li{
+  .info-text ul li {
     padding: 0;
     margin-top: 0.5rem;
   }
-  
+
   figure {
     order: 0;
   }
   .info-video {
     width: 100%;
-  padding: 0 0 50% 0;
+    padding: 0 0 50% 0;
   }
 
   .feedback-btn {
     width: 60%;
   }
   .feedback-block,
-  .feedback-btn{
+  .feedback-btn {
     align-self: center;
     margin: 0;
   }
   .section-step2step {
-/* margin-top: 94px; */
-padding: 100px 0 16px 0;
+    /* margin-top: 94px; */
+    padding: 100px 0 16px 0;
   }
-  .section-step2step::before{
+  .section-step2step::before {
     margin-top: -125px;
   }
   .step-list {
@@ -392,8 +440,8 @@ padding: 100px 0 16px 0;
   .navbar-content {
     flex-direction: column;
     padding: 1rem;
-gap: 1.5em;;
-height: auto;
+    gap: 1.5em;
+    height: auto;
   }
   h1 {
     font-size: 2rem;
@@ -425,7 +473,7 @@ height: auto;
     display: none;
   }
 }
-@media screen and (min-width: 768px) and (max-width:1110px) {
+@media screen and (min-width: 768px) and (max-width: 1110px) {
   .step-text {
     width: 45%;
   }
