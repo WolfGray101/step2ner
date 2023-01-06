@@ -129,7 +129,7 @@ figure {
   line-height: 22px;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  /* gap: 1rem; */
 }
 
 .info-text ul li {
@@ -140,6 +140,9 @@ figure {
 }
 .info {
   margin-top: 2rem;
+}
+.info-text p {
+margin: .5rem 0;
 }
 .abtain {
   border-bottom: 2px solid black;
@@ -302,6 +305,7 @@ footer:before {
 .price {
   display: flex;
   justify-content: space-around;
+  margin-top: 1rem;
 }
 .menu-button-burger {
   width: 40px;
@@ -338,11 +342,19 @@ footer:before {
   figure {
     width: 100%;
   }
+ ul {
+  padding: 1rem;
+ }
   .info-text {
     order: 1;
+    padding: 1rem;
   }
   .info-text h2{
    text-align: center;
+  }
+  .info-text ul li{
+    padding: 0;
+    margin-top: 0.5rem;
   }
   
   figure {
