@@ -11,7 +11,9 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="canonical" href="/" />
     <link rel="stylesheet" href="style.css" />
-
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.form.min.js"></script>
+    <script type="text/javascript" src="js/jquery.rd-mailform.min.js"></script>
     <script
       src="https://kit.fontawesome.com/f2a9aedc43.js"
       crossorigin="anonymous"
@@ -62,7 +64,8 @@
         <div class="navbar">
 
           <div class="modal-form hide">
-            <span class= 'close' > X </span>
+            <div class= "hide-btn" > X </div>
+
 
           <form class="mailform" method="post" action="mail.php">
             <h3>
@@ -87,7 +90,7 @@
                   placeholder="+375 (XX) YYY-YYY-Y"
                   id="phone"
                   type="text"
-                  name="email"
+                  name="phone"
                   data-constraints="@NotEmpty @NumbersOnly"
               />
             </div>
@@ -100,10 +103,16 @@
               >
                 Перезвонить мне
               </button>
-              <!-- <div class="mfInfo" style="margin-bottom: 20%"></div> -->
+              <div class="mfInfo" style="margin-bottom: 20%"></div>
             </div>
           </form>
-
+          <script>
+            (function ($) {
+            var o = $('.mailform');
+            if (o.length > 0) {
+            $(document).ready(function () {  if (o.length) { o.rdMailForm(); }
+            }) }  })(jQuery);
+            </script>
           </div>
 
           <div class="modal-menu hide">
@@ -537,7 +546,7 @@
                 placeholder="+375 (XX) YYY-YYY-Y"
                 id="phone"
                 type="text"
-                name="email"
+                name="phone"
                 data-constraints="@NotEmpty @NumbersOnly"
             />
           </div>
@@ -550,9 +559,16 @@
             >
               Перезвонить мне
             </button>
-            <!-- <div class="mfInfo" style="margin-bottom: 20%"></div> -->
+            <div class="mfInfo" style="margin-bottom: 20%"></div>
           </div>
         </form>
+        <script>
+          (function ($) {
+          var o = $('.mailform');
+          if (o.length > 0) {
+          $(document).ready(function () {  if (o.length) { o.rdMailForm(); }
+          }) }  })(jQuery);
+          </script>
 
 
         <span class="text-line" style="text-align: center"

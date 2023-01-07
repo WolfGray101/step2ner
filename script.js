@@ -7,38 +7,12 @@ let dFix = document.querySelector('.d-fix');
 let modalMenu = document.querySelector('.modal-menu');
 let modalForm = document.querySelector('.modal-form');
 let sendBtn = document.querySelectorAll('.btn-mailform')
-let closeBtn = document.querySelector('.close')
+let closeBtn = document.querySelector('.hide-btn')
 
-  showModal.addEventListener('click' , () => {
-    modalMenuAct()
-});
 
-for (let elem of modalMenu.childNodes) {
-  console.log(elem);
-  elem.addEventListener('click' , () => {
-    modalMenuAct()
-  })
-}
 
-for (let elem of showModalForm) {
-  elem.addEventListener('click' , () => {
-    ModalAct()
-  })
-}
 
-for (let el of sendBtn) {
-  el.addEventListener('click', () => {
-    ModalAct()
-  })
-}
-
-closeBtn.addEventListener('click' , () => {
-  console.log('hello');
-  ModalAct()
-
-})
-
-const ModalAct = () => {
+const modalAct = () => {
   modalForm.classList.toggle('hide');    
     modalForm.classList.toggle('form-show');
     body.classList.toggle('d-fix'); 
@@ -50,4 +24,36 @@ const modalMenuAct = () => {
   modalMenu.classList.toggle('show');
   body.classList.toggle('d-fix');
 }
+
+
+showModal.addEventListener('click' , () => {
+  modalMenuAct()
+});
+
+for (let elem of modalMenu.childNodes) {
+  console.log(elem);
+  elem.addEventListener('click' , () => {
+    modalMenuAct()
+  })
+}
+
+for (let elem of showModalForm) {
+  elem.addEventListener('click' , () => {
+    modalAct()
+  })
+}
+
+for (let el of sendBtn) {
+  el.addEventListener('click', () => {
+    modalAct()
+  })
+}
+
+closeBtn.addEventListener('click' , () => {
+  console.log('hello');
+  modalAct()
+
+})
+
+
 
