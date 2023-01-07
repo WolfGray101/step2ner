@@ -12,7 +12,10 @@
     <link rel="canonical" href="/" />
     <link rel="stylesheet" href="style.css" />
 
-    <script src="https://kit.fontawesome.com/f2a9aedc43.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/f2a9aedc43.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- <link rel="stylesheet" type="text/css" href="css/rd-mailform.css" > -->
 
     <!-- <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css"> -->
@@ -54,51 +57,94 @@
   </head>
 
   <body>
-    
     <main>
-     
-      
       <nav>
         <div class="navbar">
+
+          <div class="modal-form hide">
+            <span class= 'close' > X </span>
+
+          <form class="mailform" method="post" action="mail.php">
+            <h3>
+              Хочу заказать комплек VR
+            </h3>
+            <div class="form-group">
+              <label class = "label label-dark" for="name" data-add-placeholder data-add-icon> Имя
+                </label>
+                <input
+                  placeholder="Представьтесь"
+                  type="text"
+                  id="name"
+                  name="name"
+                  data-constraints="@NotEmpty @LettersOnly"
+              />
+            </div>
+            <div class="form-group">
+              <label data-add-placeholder data-add-icon for="phone" 
+              class = "label label-dark"> Номер телефона 
+                </label>
+                <input
+                  placeholder="+375 (XX) YYY-YYY-Y"
+                  id="phone"
+                  type="text"
+                  name="email"
+                  data-constraints="@NotEmpty @NumbersOnly"
+              />
+            </div>
+  
+            <div class="form-group btn-wr">
+              <button
+                class="btn-mailform fa fa-paper-plane"
+                style="border-radius: 10px"
+                type="submit"
+              >
+                Перезвонить мне
+              </button>
+              <!-- <div class="mfInfo" style="margin-bottom: 20%"></div> -->
+            </div>
+          </form>
+
+          </div>
+
           <div class="modal-menu hide">
             <div class="logo">
               <span> step2nereality</span>
             </div>
-            <!-- <div class="menu-button-burger">
-              <div class="menu-button-burger-item"></div>
-              <div class="menu-button-burger-item"></div>
-              <div class="menu-button-burger-item"></div>
-            </div> -->
-              <span class="phone modal-margin">
-                <a href="tel:+375 (25) 7100041"> +375 25 71 000 41</a>
-              </span>
-              <span class="">step2nereality@gmail.com</span>
-              <span class="msg">
-                <a href="viber://chat?number=375257100041">
-                  <i class="fab fa-viber fa-xl"></i></a>
-                  <a href="https://instagram.com/step2nereality.by">
-                <i class="fab fa-instagram fa-xl"></i> </a>
-                <a href="https://t.me/+375257100041">
-                  <i class="fa-brands fa-telegram fa-xl"></i> </a>
-                </span>
-                  <a href = "#about">About</a>
-                  <a href = "#contacts">Contact US</a></li>
-                    <a href = "#price">Price</a>
-                    <a href = "/">Games</a></li>
-              </ul>
+
+            <span class="phone modal-margin">
+              <a href="tel:+375 (25) 7100041"> +375 25 71 000 41</a>
+            </span>
+            <span class="">step2nereality@gmail.com</span>
+            <span class="msg">
+              <a href="viber://chat?number=375257100041">
+                <i class="fab fa-viber fa-xl"></i
+              ></a>
+              <a href="https://instagram.com/step2nereality.by">
+                <i class="fab fa-instagram fa-xl"></i>
+              </a>
+              <a href="https://t.me/+375257100041">
+                <i class="fa-brands fa-telegram fa-xl"></i>
+              </a>
+            </span>
+            <a href="#about">About</a>
+            <a href="#contacts">Contact US</a>
+
+            <a href="#price">Price</a>
+            <a href="/">Games</a>
           </div>
           <div class="navbar-content">
             <ul class="list">
               <!-- <li>offerta</li> -->
               <li>
-                <a href = "#about">About</a>
+                <a href="#about">About</a>
               </li>
-  
+
               <li>
-                <a href = "#contacts">Contact US</a></li>
+                <a href="#contacts">Contact US</a>
+              </li>
             </ul>
             <div class="logo">
-              <a href="tel:+375 (25) 7100041"> <h1> +375 25 71 000 41 </h1></a>
+              <a href="tel:+375 (25) 7100041"> <h1>+375 25 71 000 41</h1></a>
             </div>
             <div class="menu-button-burger">
               <div class="menu-button-burger-item"></div>
@@ -107,18 +153,19 @@
             </div>
             <ul class="list">
               <li>
-                <a href = "#price">Price</a>
+                <a href="#price">Price</a>
               </li>
-  
+
               <li>
-                <a href = "/">Games</a></li>
+                <a href="/">Games</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
-        <div class="section-info" id="about">
+      <div class="section-info" id="about">
         <div class="info-block">
-          <div class="info-text" id = 'price'>
+          <div class="info-text" id="price">
             <h2>АРЕНДА VR ОЧКОВ - МИНСК</h2>
             <p>
               Теперь вы можете наслаждаться виртуальной реальностью высочайшего
@@ -130,7 +177,7 @@
               погрузитесь полностью и позвольте себе быть окруженным магией мира
               VR.
             </p>
-            <div class="price" >
+            <div class="price">
               <div>
                 <p>Условия аренды:</p>
                 <ul>
@@ -159,7 +206,7 @@
             />
           </figure>
         </div>
-        
+
         <div class="info-block dark">
           <figure>
             <img
@@ -200,28 +247,28 @@
         </div>
         <div class="info-block">
           <div class="info-text">
-            <h2> VR (QUEST 2) НАСТРОЙКА</h2>
-              <p>
-                Установить и настроить гарнитуру VR несложно, это займет у вас
-                всего несколько минут.
-              </p>
-              <p>
-                1. МЕСТО - выбираем свободное место, рекомендуемая площадь не
-                менее 2х2м.
-              </p>
-              <p>
-                2. 6DOF - датчики движения встроены в комплект и нет
-                необходимости использовать внешние датчики
-              </p>
-              <p>3. VR ОЧКИ - надев очки, вы увидите и услышите мир VR</li>
-              <p>
-                4. КОНТРОЛЛЕРЫ - как только вы их наденете, вы увидите свои руки
-                в виртуальном пространстве
-              </p>
-              <p>
-                5. КОНФИГУРАЦИЯ. Метасистема (Oculus) шаг за шагом подскажет,
-                что делать дальше.
-              </p>
+            <h2>VR (QUEST 2) НАСТРОЙКА</h2>
+            <p>
+              Установить и настроить гарнитуру VR несложно, это займет у вас
+              всего несколько минут.
+            </p>
+            <p>
+              1. МЕСТО - выбираем свободное место, рекомендуемая площадь не
+              менее 2х2м.
+            </p>
+            <p>
+              2. 6DOF - датчики движения встроены в комплект и нет необходимости
+              использовать внешние датчики
+            </p>
+            <p>3. VR ОЧКИ - надев очки, вы увидите и услышите мир VR</p>
+            <p>
+              4. КОНТРОЛЛЕРЫ - как только вы их наденете, вы увидите свои руки в
+              виртуальном пространстве
+            </p>
+            <p>
+              5. КОНФИГУРАЦИЯ. Метасистема (Oculus) шаг за шагом подскажет, что
+              делать дальше.
+            </p>
             <!-- <span class="feedback-block">Хочу комплект на дом</span>
             <button class="feedback-block feedback-btn">Заказать</button> -->
           </div>
@@ -460,13 +507,54 @@
           <span class="email">step2nereality@gmail.com</span>
           <span class="msg">
             <a href="viber://chat?number=375257100041">
-              <i class="fab fa-viber fa-xl"></i></a>
-              <a href="https://instagram.com/step2nereality.by">
-            <i class="fab fa-instagram fa-xl"></i> </a>
+              <i class="fab fa-viber fa-xl"></i
+            ></a>
+            <a href="https://instagram.com/step2nereality.by">
+              <i class="fab fa-instagram fa-xl"></i>
+            </a>
             <a href="https://t.me/+375257100041">
-              <i class="fa-brands fa-telegram fa-xl"></i> </a>
-            </span>
+              <i class="fa-brands fa-telegram fa-xl"></i>
+            </a>
+          </span>
         </div>
+
+        <form class="mailform" method="post" action="mail.php">
+          <div class="form-group">
+            <label class = "label" for="name" data-add-placeholder data-add-icon> Имя
+              </label>
+              <input
+                placeholder="Представьтесь"
+                type="text"
+                id="name"
+                name="name"
+                data-constraints="@NotEmpty @LettersOnly"
+            />
+          </div>
+          <div class="form-group">
+            <label data-add-placeholder data-add-icon for="phone" class = "label"> Номер телефона 
+              </label>
+              <input
+                placeholder="+375 (XX) YYY-YYY-Y"
+                id="phone"
+                type="text"
+                name="email"
+                data-constraints="@NotEmpty @NumbersOnly"
+            />
+          </div>
+
+          <div class="form-group btn-wr">
+            <button
+              class="btn-mailform fa fa-paper-plane"
+              style="border-radius: 10px"
+              type="submit"
+            >
+              Перезвонить мне
+            </button>
+            <!-- <div class="mfInfo" style="margin-bottom: 20%"></div> -->
+          </div>
+        </form>
+
+
         <span class="text-line" style="text-align: center"
           >Позвоните нам или свяжитесь через любой удобный мессенджер. <br />
           Мы с удовольствием предоставим вам всю интересующую информацию</span
@@ -474,6 +562,5 @@
       </div>
     </footer>
     <script src="script.js" crossorigin="anonymous"></script>
-
   </body>
 </html>
