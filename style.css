@@ -484,7 +484,10 @@ footer:before {
 .rd-mailform .form-group .btn-mailform:hover {
   box-shadow: 0 0 2px 2px royalblue;
   background-color: royalblue;
-
+}
+.rd-mailform .form-group .btn-mailform:active {
+  box-shadow: 0 0 2px 2px royalblue;
+  background-color: royalblue;
 }
 .rd-mailform .form-group input {
   font-size: 12px;
