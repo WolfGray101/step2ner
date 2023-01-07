@@ -4,7 +4,7 @@ let body = document.querySelector("body");
 let dFix = document.querySelector(".d-fix");
 let modalMenu = document.querySelector(".modal-menu");
 let modalForm = document.querySelector(".modal-form");
-let sendBtn = document.querySelectorAll(".btn-mailform");
+let sendBtn = document.querySelectorAll(".close-form-after-send");
 let closeBtn = document.querySelector(".hide-btn");
 
 const modalAct = () => {
@@ -16,7 +16,7 @@ const modalAct = () => {
 const modalMenuAct = () => {
   showModal.classList.toggle("rotate-burger");
   modalMenu.classList.toggle("hide");
-  modalMenu.classList.toggle("show");
+  modalMenu.classList.toggle("show-window");
   body.classList.toggle("d-fix");
 };
 

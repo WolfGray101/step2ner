@@ -10,6 +10,7 @@
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="canonical" href="/" />
+    <link rel="stylesheet" type="text/css" href="css/rd-mailform.css" >
     <link rel="stylesheet" href="style.css" />
 
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
@@ -19,7 +20,7 @@
       src="https://kit.fontawesome.com/f2a9aedc43.js"
       crossorigin="anonymous"
     ></script>
-    
+
   </head>
 
   <body>
@@ -53,7 +54,7 @@
                     type="text"
                     id="name"
                     name="name"
-                    data-constraints="@NotEmpty @LettersOnly"
+                    data-constraints="@NotEmpty"
                   />
                 </div>
                 <div class="form-group">
@@ -70,13 +71,13 @@
                     id="phone"
                     type="text"
                     name="phone"
-                    data-constraints="@NotEmpty @NumbersOnly"
+                    data-constraints="@NotEmpty"
                   />
                 </div>
 
                 <div class="form-group btn-wr">
                   <button
-                    class="btn-mailform fa fa-paper-plane"
+                    class="btn-mailform close-form-after-send fa fa-paper-plane"
                     style="border-radius: 10px"
                     type="submit"
                   >
@@ -88,7 +89,7 @@
             </form>
             <script>
               (function ($) {
-                var o = $(".mailform");
+                var o = $(".rd-mailform");
                 if (o.length > 0) {
                   $(document).ready(function () {
                     if (o.length) {
@@ -503,7 +504,7 @@
             />
           </div>
 
-          <div class="form-group btn-wr">
+          <div class="form-group ">
             <button
               class="btn-mailform fa fa-paper-plane"
               style="border-radius: 10px"
@@ -516,7 +517,7 @@
         </form>
         <script>
           (function ($) {
-            var o = $(".mailform");
+            var o = $(".rd-mailform");
             if (o.length > 0) {
               $(document).ready(function () {
                 if (o.length) {
@@ -533,6 +534,7 @@
         >
       </div>
     </footer>
+  
     <script src="script.js" crossorigin="anonymous"></script>
   </body>
 </html>

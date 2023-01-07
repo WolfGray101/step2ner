@@ -39,6 +39,41 @@ a:hover {
   padding: 1rem;
   color: #333;
 }
+
+element.style {
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px)
+.rd-mailform .btn-mailform {
+  padding: 0.5rem;
+  min-width: 40%;
+}
+<style>
+.fa, .fa-brands, .fa-classic, .fa-regular, .fa-sharp, .fa-solid, .fab, .far, .fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display,inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+<style>
+.fa {
+  font-family: var(--fa-style-family,"Font Awesome 6 Free");
+  font-weight: var(--fa-style,900);
+}
+.btn-mailform {
+  padding: 0.5rem;
+  background: none;
+  background-color: royalblue;
+  color: #fff;
+  align-self: flex-end;
+  border: none;
+}
+.btn-mailform {
+  font-size: 1rem;
+}
 .msg a {
   color: rgb(118, 116, 116);
 }
@@ -368,23 +403,24 @@ footer:before {
   transition: 0.15s linear;
   z-index: 1100;
 }
-/* 
-fieldset {
-padding: 0 4rem;} */
+
+.rd-mailform fieldset {
+border: 1px solid #fff;
+}
 
 .modal-margin {
   margin-top: 4rem;
 }
 .rd-mailform {
   width: 80%;
-  margin: 0 auto;
+  margin: 2rem auto;
   position: relative;
 }
-.form-group {
+.rd-mailform .form-group {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 1rem auto;
+  margin: 1rem auto !important;
   width: 80%;
 }
 .label {
@@ -454,7 +490,7 @@ padding: 0 4rem;} */
   transition: 0.5s linear;
   z-index: 499;
 }
-.show {
+.show-window {
   width: 100%;
   min-height: 200vh;
   position: absolute;
@@ -553,9 +589,7 @@ padding: 0 4rem;} */
     width: 80%;
     padding: 0.5rem;
   }
-  .rd-mailform {
-    width: 100%;
-  }
+
   .info-block {
     margin-top: 3rem;
   }
@@ -583,11 +617,11 @@ padding: 0 4rem;} */
   .mailform-800 {
     width: 60%;
   }
-  .form-group {
-    width: 50%;
+  .rd-mailform .form-group {
+    width: 60%;
     margin: 2rem auto;
   }
-  .btn-mailform {
+  .rd-mailform .btn-mailform {
     padding: 0.5rem;
     min-width: 40%;
   }
