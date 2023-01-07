@@ -43,25 +43,30 @@ a:hover {
 element.style {
   border-radius: 10px;
 }
-@media screen and (min-width: 768px)
-.rd-mailform .btn-mailform {
+@media screen and (min-width: 768px) .rd-mailform .btn-mailform {
   padding: 0.5rem;
   min-width: 40%;
 }
-<style>
-.fa, .fa-brands, .fa-classic, .fa-regular, .fa-sharp, .fa-solid, .fab, .far, .fas {
+<style > .fa,
+.fa-brands,
+.fa-classic,
+.fa-regular,
+.fa-sharp,
+.fa-solid,
+.fab,
+.far,
+.fas {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  display: var(--fa-display,inline-block);
+  display: var(--fa-display, inline-block);
   font-style: normal;
   font-variant: normal;
   line-height: 1;
   text-rendering: auto;
 }
-<style>
-.fa {
-  font-family: var(--fa-style-family,"Font Awesome 6 Free");
-  font-weight: var(--fa-style,900);
+<style > .fa {
+  font-family: var(--fa-style-family, "Font Awesome 6 Free");
+  font-weight: var(--fa-style, 900);
 }
 .btn-mailform {
   padding: 0.5rem;
@@ -405,7 +410,7 @@ footer:before {
 }
 
 .rd-mailform fieldset {
-border: 1px solid #fff;
+  border: 1px solid #fff;
 }
 
 .modal-margin {
@@ -468,7 +473,7 @@ border: 1px solid #fff;
   width: 100%;
   padding: 0 5px;
 }
-.btn-mailform {
+.rd-mailform .formgroup .btn-mailform {
   padding: 0.5rem;
   background: none;
   background-color: royalblue;
@@ -476,8 +481,13 @@ border: 1px solid #fff;
   align-self: flex-end;
   border: none;
 }
-.btn-mailform:hover {
+.rd-mailform .form-group .btn-mailform:hover {
   box-shadow: 0 0 2px 2px royalblue;
+  background-color: royalblue;
+
+}
+.rd-mailform .form-group input {
+  font-size: 12px;
 }
 
 .hide {
