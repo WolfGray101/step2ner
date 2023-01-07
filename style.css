@@ -128,6 +128,10 @@ element.style {
   gap: 1rem;
   width: 20%;
   justify-content: center;
+  font-family: Audiowide;
+}
+.logo {
+  font-family: Audiowide;
 }
 
 .section-info {
