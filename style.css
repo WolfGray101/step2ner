@@ -133,9 +133,23 @@ element.style {
 .logo {
   font-family: Audiowide;
 }
+.logo a{
+  font-size: 1.5rem;
+}
 
 .section-info {
   padding-top: 60px;
+}
+.section-games {
+
+}
+.game-list  {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.game-item {
+  width: 25%;
 }
 figure {
   width: 50%;
@@ -241,7 +255,7 @@ h2 {
 }
 
 .section-about {
-  margin: 0 auto;
+  margin: 2rem auto;
   width: 80%;
   text-align: center;
   display: flex;
@@ -288,7 +302,7 @@ h2 {
   content: "";
   z-index: 10;
 }
-footer:before {
+.section-games:before {
   margin-top: -2px;
   background: transparent url(img/after_bg_red.png) no-repeat bottom center;
   text-align: center;
@@ -610,6 +624,15 @@ footer:before {
   .info-block {
     margin-top: 3rem;
   }
+  .game-item {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 568px) and (max-width: 767px) {
+
+  .game-item {
+    width: 33%;
+  }
 }
 @media screen and (min-width: 768px) {
   .info-block {
@@ -652,5 +675,8 @@ footer:before {
   }
   .feedback-btn {
     width: 50%;
+  }
+  .game-item {
+    width: 33%;
   }
 }

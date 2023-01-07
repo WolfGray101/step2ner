@@ -3,13 +3,13 @@
 //Пример создан сайтом http://blogjquery.ru/ajax-rdmailform-forma-otpravki-soobshhenij-bez-perezagruzki-stranicy/
 
 //Первая форма
-if(isset($_POST['name']) && !empty($_POST['email'])) {
-$to = '5565426@mail.ru';
+if(isset($_POST['name']) && !empty($_POST['name'])) {
+$to = 'step2nereality@gmail.com';
 $subject = 'Сообщение с сайта '.$_SERVER['SERVER_NAME'];
 $charset = "utf-8";
 $headerss ="Content-type: text/html; charset=$charset\r\n";
 $headerss.="Date: ".date('D, d M Y h:i:s')."\r\n";
-$msgotprav = 'Ваше имя: '.$_POST['name'].'<br>Ваш Email: '.$_POST['email'].'<br>Текст сообщения: '.$_POST['message'];
+$msgotprav = 'Имя заказчика: '.$_POST['name'].'<br>Телефон заказчика: '.$_POST['phone'];
 $msgotprav .= '<br><br>Отправлено со страницы: '.$_SERVER['HTTP_REFERER'];
 mail($to, $subject, $msgotprav, $headerss);
 echo 'MF000'; //если сообщение отправлено ajax-ом - выводим статус успешной доставки
