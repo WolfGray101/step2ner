@@ -360,6 +360,7 @@ footer:before {
   right: 0;
   z-index: 5000;
   position: relative;
+
 }
 .form-show {
   width: 100%;
@@ -368,7 +369,9 @@ footer:before {
   transition: 0.15s linear;
   z-index: 1100;
 }
-
+/* 
+fieldset {
+padding: 0 4rem;} */
 
 .modal-margin {
   margin-top: 4rem
@@ -393,11 +396,7 @@ position: relative;
   padding:0 5px;
 }
 
-.mailform h3 {
-  font-size: 25px;
-  color: #fff;
-  margin-bottom: 3rem;
-}
+
 .label-dark {
   background: #333;
   opacity: 0.97;
@@ -541,6 +540,13 @@ border: none;
   h1 {
     font-size: 2rem;
   }
+
+  .mailform h3 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 3rem;
+    font-weight: 400;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 567px) {
@@ -567,6 +573,25 @@ border: none;
   .menu-button-burger {
     display: none;
   }
+  .mailform{
+    width: 30%;
+  }
+  .mailform h3 {
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 3rem;
+  }
+  .mailform-800 {
+width: 60%;
+  }
+  .form-group {
+    width: 50%;
+    margin: 2rem auto;
+  }
+  .btn-mailform {
+    padding: .5rem;
+    min-width: 40%;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1110px) {
   .step-text {
@@ -578,4 +603,5 @@ border: none;
   .feedback-btn {
     width: 50%;
   }
+
 }
