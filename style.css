@@ -376,7 +376,7 @@ padding: 0 4rem;} */
 .modal-margin {
   margin-top: 4rem
 }
-.mailform {
+.rd-mailform {
 width: 80%;
 margin: 0 auto;
 position: relative;
@@ -541,7 +541,7 @@ border: none;
     font-size: 2rem;
   }
 
-  .mailform h3 {
+  .rd-mailform h3 {
     font-size: 20px;
     color: #fff;
     margin-bottom: 3rem;
@@ -573,10 +573,10 @@ border: none;
   .menu-button-burger {
     display: none;
   }
-  .mailform{
+  .rd-mailform{
     width: 30%;
   }
-  .mailform h3 {
+  .rd-mailform h3 {
     font-size: 25px;
     color: #fff;
     margin-bottom: 3rem;
