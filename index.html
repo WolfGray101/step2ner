@@ -2,15 +2,16 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <title>Очки виртуальной реальности на дом в Минске</title>
     <meta name="description" content="" />
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="canonical" href="/" />
     <link rel="stylesheet" href="style.css" />
+
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.form.min.js"></script>
     <script type="text/javascript" src="js/jquery.rd-mailform.min.js"></script>
@@ -18,106 +19,84 @@
       src="https://kit.fontawesome.com/f2a9aedc43.js"
       crossorigin="anonymous"
     ></script>
-    <!-- <link rel="stylesheet" type="text/css" href="css/rd-mailform.css" > -->
-
-    <!-- <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/fonts.css"> -->
-
-    <!-- <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="js/jquery.form.min.js"></script>
-<script type="text/javascript" src="js/jquery.rd-mailform.min.js"></script> -->
-
-    <!-- <script>
-      $(document).ready(function () {
-        //Скрыть PopUp при загрузке страницы
-        PopUpHide();
-      });
-      //Функция отображения PopUp
-      function PopUpShow() {
-        $("#popup1").show();
-      }
-      //Функция скрытия PopUp
-      function PopUpHide() {
-        $("#popup1").hide();
-      }
-    </script> -->
-
-    <!-- <script>
-      $(document).ready(function () {
-        //Скрыть PopUp при загрузке страницы
-        PopUpHide1();
-      });
-      //Функция отображения PopUp
-      function PopUpShow1() {
-        $("#galery").show();
-      }
-      //Функция скрытия PopUp
-      function PopUpHide1() {
-        $("#galery").hide();
-      }
-    </script> -->
+    
   </head>
 
   <body>
     <main>
       <nav>
         <div class="navbar">
-
           <div class="modal-form hide">
-            <div class= "hide-btn" > X </div>
+            <div class="hide-btn">X</div>
 
+            <form
+              class="rd-mailform mailform-800"
+              method="post"
+              action="mail.php"
+            >
+              <fieldset>
+                <legend>
+                  <h3>Хочу заказать комплект VR</h3>
+                </legend>
 
-          <form class="rd-mailform mailform-800" method="post" action="mail.php">
-            <fieldset>
-              <legend>
-                <h3>
-                  Хочу заказать комплект VR
-                </h3>
-              </legend>
-            
-            <div class="form-group">
-              <label class = "label label-dark" for="name" data-add-placeholder data-add-icon> Имя
-                </label>
-                <input
-                  placeholder="Представьтесь"
-                  type="text"
-                  id="name"
-                  name="name"
-                  data-constraints="@NotEmpty @LettersOnly"
-              />
-            </div>
-            <div class="form-group">
-              <label data-add-placeholder data-add-icon for="phone" 
-              class = "label label-dark"> Номер телефона 
-                </label>
-                <input
-                  placeholder="+375 (XX) YYY-YYY-Y"
-                  id="phone"
-                  type="text"
-                  name="phone"
-                  data-constraints="@NotEmpty @NumbersOnly"
-              />
-            </div>
-  
-            <div class="form-group btn-wr">
-              <button
-                class="btn-mailform fa fa-paper-plane"
-                style="border-radius: 10px"
-                type="submit"
-              >
-                Перезвонить мне
-              </button>
-              <div class="mfInfo" ></div>
-            </div>
-          </fieldset>
+                <div class="form-group">
+                  <label
+                    class="label label-dark"
+                    for="name"
+                    data-add-placeholder
+                    data-add-icon
+                  >
+                    Имя
+                  </label>
+                  <input
+                    placeholder="Представьтесь"
+                    type="text"
+                    id="name"
+                    name="name"
+                    data-constraints="@NotEmpty @LettersOnly"
+                  />
+                </div>
+                <div class="form-group">
+                  <label
+                    data-add-placeholder
+                    data-add-icon
+                    for="phone"
+                    class="label label-dark"
+                  >
+                    Номер телефона
+                  </label>
+                  <input
+                    placeholder="+375 (XX) YYY-YYY-Y"
+                    id="phone"
+                    type="text"
+                    name="phone"
+                    data-constraints="@NotEmpty @NumbersOnly"
+                  />
+                </div>
 
-          </form>
-          <script>
-            (function ($) {
-            var o = $('.mailform');
-            if (o.length > 0) {
-            $(document).ready(function () {  if (o.length) { o.rdMailForm(); }
-            }) }  })(jQuery);
+                <div class="form-group btn-wr">
+                  <button
+                    class="btn-mailform fa fa-paper-plane"
+                    style="border-radius: 10px"
+                    type="submit"
+                  >
+                    Перезвонить мне
+                  </button>
+                  <div class="mfInfo"></div>
+                </div>
+              </fieldset>
+            </form>
+            <script>
+              (function ($) {
+                var o = $(".mailform");
+                if (o.length > 0) {
+                  $(document).ready(function () {
+                    if (o.length) {
+                      o.rdMailForm();
+                    }
+                  });
+                }
+              })(jQuery);
             </script>
           </div>
 
@@ -184,13 +163,12 @@
             <h2>АРЕНДА VR ОЧКОВ - МИНСК</h2>
             <p>
               Теперь вы можете наслаждаться виртуальной реальностью высочайшего
-              качества у себя дома! Мы сдаем в аренду очки виртуальной
+              качества у себя дома! Мы предлагаем в прокат очки виртуальной
               реальности в Минске.
             </p>
             <p>
-              Испытайте лучшие эмоции, испытайте невероятные ощущения,
-              погрузитесь полностью и позвольте себе быть окруженным магией мира
-              VR.
+              Испытайте лучшие эмоции и невероятные ощущения, погрузитесь
+              полностью и позвольте себе быть окруженным магией мира VR.
             </p>
             <div class="price">
               <div>
@@ -284,8 +262,6 @@
               5. КОНФИГУРАЦИЯ. Метасистема (Oculus) шаг за шагом подскажет, что
               делать дальше.
             </p>
-            <!-- <span class="feedback-block">Хочу комплект на дом</span>
-            <button class="feedback-block feedback-btn">Заказать</button> -->
           </div>
           <figure>
             <img
@@ -311,47 +287,18 @@
             <span class="text-line">Все необходимые элементы</span>
             <span class="span-line"></span>
           </div>
-
-          <!-- <span class="text-line"
-            >Мы подготовили для вас комплекты виртуальной реальности на базе
-            очков Meta (Oculus). Они подготовлены таким образом, чтобы вы
-            могли сразу начать виртуальную реальность в своей домашней гостиной.
-            Не требуется никаких специальных аксессуаров
-              или датчиков слежения. Движение участника в мире виртуальной
-              реальности отображается с помощью датчиков, встроенных в
-              гарнитуру. 
-          </span> -->
         </div>
         <div class="info">
-          <!-- <div class="info-text">
-            <h2>Очки (Oculus) Meta Quest 2</h2>
-            <figure>
-              <img
-                src="img/images-oculos/vr-one-zestaw-oculus-quest-2.jpg"
-                class="info-img"
-                alt="Аналоговые камеры видеонаблюдения"
-              />
-            </figure>
-            <span>
-              Новейшие высококачественные очки виртуальной реальности Meta Quest
-              2 с контроллерами Meta Touch позволят вам перенести свое тело в
-              пространство компьютерной симуляции. В настоящее время это самое
-              популярное оборудование, по-прежнему лидирующее на рынке, поэтому
-              мы гарантируем незабываемые впечатления от виртуальной реальности.
-            </span>
-          </div> -->
-
           <div class="info-text">
             <h2>Очки - это все, что вам нужно!</h2>
 
             <span>
-              Мы подготовили для вас комплекты виртуальной реальности на базе
-              очков Meta (Oculus). Они подготовлены таким образом, чтобы вы
-              могли сразу начать виртуальную реальность в своей домашней
-              гостиной. Не требуется никаких специальных аксессуаров или
-              датчиков слежения. Движение участника в мире виртуальной
-              реальности отображается с помощью датчиков, встроенных в
-              гарнитуру.
+              Комплекты виртуальной реальности на базе очков Meta (Oculus)
+              подготовлены таким образом, что вам Не требуется никаких
+              специальных аксессуаров или датчиков слежения. Движение участника
+              в мире виртуальной реальности отображается с помощью датчиков,
+              встроенных в гарнитуру. Вы можете сразу с головой окунаться
+              виртуальную реальность не выходя из дома.
             </span>
           </div>
           <figure>
@@ -369,9 +316,7 @@
           <p class="abtain-content abtain-text">
             Полный комплект на все случаи жизни
           </p>
-          <!-- <p class="abtain-content abtain-text">
-            Самовывоз или доставка по Минску
-          </p> -->
+
           <button class="feedback-block feedback-btn">Заказать комплект</button>
         </div>
       </div>
@@ -408,11 +353,10 @@
           <span> ВПЕЧАТЛЕНИЕ • ФЭНТЕЗИ • УЖАСЫ • СОРЕВНОВАНИЕ • КОСМОС </span>
 
           <span>
-            Мы хотим помочь вам более интересно провести время вместе дома,
-            организовать соревнование между участниками или позволить вашим
-            детям познакомиться с новой техникой. Мы предлагаем все больше и
-            больше фантастических игр, обеспечивающих часы развлечений.
-            Пожалуйста, свяжитесь с нами, Если вам нужно больше информации.
+            Мы призваны помочь вам наиболее интересно провеодить время дома,
+            организовать соревнования между друзьями. Мы предлагаем множество
+            фантастических игр, обеспечивающих часы развлечений. Пожалуйста,
+            свяжитесь с нами, Если вам нужно больше информации.
           </span>
           <button class="feedback-block feedback-btn">
             Получить консультацию
@@ -436,9 +380,9 @@
           </div>
 
           <span class="text-line"
-            >Мы подготовили для вас комплекты виртуальной реальности на базе
-            очков Meta (Oculus). Комплекты подготовлены таким образом, чтобы вы
-            могли сразу начать виртуальную реальность в своей домашней гостиной.
+            >Комплекты виртуальной реальности на базе очков Meta (Oculus).
+            Комплекты подготовлены таким образом, чтобы вы могли сразу окунуться
+            в виртуальную реальность у себя дома.
           </span>
         </div>
         <div class="step-list">
@@ -533,27 +477,29 @@
           </span>
         </div>
 
-        <form class="rd-mailform" method="post" action="mail.php">
+        <form class="rd-mailform mailform-800" method="post" action="mail.php">
           <div class="form-group">
-            <label class = "label" for="name" data-add-placeholder data-add-icon> Имя
-              </label>
-              <input
-                placeholder="Представьтесь"
-                type="text"
-                id="name"
-                name="name"
-                data-constraints="@NotEmpty @LettersOnly"
+            <label class="label" for="name" data-add-placeholder data-add-icon>
+              Имя
+            </label>
+            <input
+              placeholder="Представьтесь"
+              type="text"
+              id="name"
+              name="name"
+              data-constraints="@NotEmpty @LettersOnly"
             />
           </div>
           <div class="form-group">
-            <label data-add-placeholder data-add-icon for="phone" class = "label"> Номер телефона 
-              </label>
-              <input
-                placeholder="+375 (XX) YYY-YYY-Y"
-                id="phone"
-                type="text"
-                name="phone"
-                data-constraints="@NotEmpty @NumbersOnly"
+            <label data-add-placeholder data-add-icon for="phone" class="label">
+              Номер телефона
+            </label>
+            <input
+              placeholder="+375 (XX) YYY-YYY-Y"
+              id="phone"
+              type="text"
+              name="phone"
+              data-constraints="@NotEmpty @NumbersOnly"
             />
           </div>
 
@@ -570,14 +516,18 @@
         </form>
         <script>
           (function ($) {
-          var o = $('.mailform');
-          if (o.length > 0) {
-          $(document).ready(function () {  if (o.length) { o.rdMailForm(); }
-          }) }  })(jQuery);
-          </script>
+            var o = $(".mailform");
+            if (o.length > 0) {
+              $(document).ready(function () {
+                if (o.length) {
+                  o.rdMailForm();
+                }
+              });
+            }
+          })(jQuery);
+        </script>
 
-
-        <span class="text-line" style="text-align: center; font-size: 12px;" 
+        <span class="text-line" style="text-align: center; font-size: 12px"
           >Позвоните нам или свяжитесь через любой удобный мессенджер. <br />
           Мы с удовольствием предоставим вам всю интересующую информацию</span
         >
