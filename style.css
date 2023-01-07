@@ -281,11 +281,11 @@ footer:before {
 .contacts {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   align-items: center;
   padding: 2rem;
 }
 .contact {
+  padding-top: 2rem;
   font-family: Audiowide;
   color: rgb(113, 113, 113);
   display: flex;
@@ -435,7 +435,6 @@ margin-right: 2rem;
   padding: 0 5px;
 }
 .btn-mailform {
-width: 70%;
 padding: .5rem;
 background: none;
 background-color: royalblue;
